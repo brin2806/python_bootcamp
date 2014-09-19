@@ -1,4 +1,8 @@
 # refactor to generate output to a list
+
+user_upperlimit = int(input("What is the upper limit: "))
+upper_limit = user_upperlimit
+
 def fizzbuzz(upper_limit):
     output_list = []
     for num in range(1, upper_limit+1):
@@ -16,6 +20,8 @@ def fizzbuzz(upper_limit):
     print(output_list)        
 
 
-print(fizzbuzz(35))
+fizzbuzz(upper_limit)
 
 if __name__ == '__main__':
+    upper_limit
+    fizzbuzz(upper_limit)

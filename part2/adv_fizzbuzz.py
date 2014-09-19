@@ -1,19 +1,24 @@
-# print numbers from 1 to 100
+# asks for a number and then makes it the upper limit
+
+user_upperlimit = int(input("What is the upper limit: "))
+upper_limit = user_upperlimit
+
 def fizzbuzz(upper_limit):
     for num in range(1, upper_limit+1):
 
         if (num % 3 == 0 and num % 5 == 0):
-            print("FizzBuzz")
+            return "FizzBuzz"
 
         elif num % 5 == 0:
-            print("Buzz")
+            return "Buzz"
 
         elif num % 3 == 0:
-            print("Fizz")
+            return "Fizz"
         else:
-            print(num)    
+            return num 
 
-print(fizzbuzz(100))
+print(fizzbuzz(upper_limit))          
 
-
-if __name__ == '__main__':
+#  if __name__ == '__main__':
+#    upper_limit
+#    fizzbuzz(upper_limit)
